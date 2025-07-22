@@ -1,62 +1,136 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Planet Burguer</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cardápio Planet Burguer</title>
   <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
-      font-family: 'Fredoka One', cursive;
       background-color: #1a1a1a;
       color: white;
+      font-family: 'Fredoka One', cursive;
       padding: 20px;
     }
-    header { text-align: center; margin-bottom: 20px; }
-    .logo { max-width: 200px; }
-    .menu-inicial {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin-top: 40px;
-      gap: 15px;
-    }
-    .menu-inicial a {
-      background-color: #f1c40f;
-      color: #1a1a1a;
-      padding: 15px 30px;
-      border-radius: 20px;
-      text-decoration: none;
-      font-size: 1em;
-      font-weight: bold;
-      transition: 0.3s;
-    }
-    .menu-inicial a:hover { background-color: #ffe066; }
-    footer {
+    h1, h2 {
+      color: #f1c40f;
       text-align: center;
-      margin-top: 40px;
-      font-size: 0.9em;
-      color: #bbb;
+    }
+    .categoria {
+      margin: 40px 0;
+    }
+    .categoria h2 {
+      color: #ffe066;
+      border-bottom: 2px solid #f1c40f;
+      margin-bottom: 10px;
+      padding-bottom: 5px;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    li {
+      background: #2c2c2c;
+      padding: 10px;
+      margin: 5px 0;
+      border-radius: 8px;
+    }
+    .preco {
+      float: right;
+      color: #f1c40f;
     }
   </style>
 </head>
 <body>
-  <header>
-    <img src="https://raw.githubusercontent.com/redvc2025/planetburguer2.github.io/main/logo.png" alt="Planet Burguer Logo" class="logo">
-    <h1>Planet Burguer</h1>
-    <p>Sabores de outro planeta diretamente para o seu lanche!</p>
-  </header>
+  <h1>Cardápio Planet Burguer</h1>
 
-  <section class="menu-inicial">
-    <a href="https://redvc2025.github.io/planetburguer2.github.io/" target="_blank">Ver Cardápio Completo</a>
-    <a href="https://wa.me/5594992778281" target="_blank">Fazer Pedido no WhatsApp</a>
-    <a href="https://www.google.com/maps?q=planet+burguer+reden%C3%A7%C3%A3o+pa" target="_blank">Ver Localização</a>
-    <a href="https://www.instagram.com/" target="_blank">Instagram</a>
-  </section>
+  <div class="categoria">
+    <h2>🍔 Burgers</h2>
+    <ul>
+      <li>01 - Terra <span class="preco">25,00</span></li>
+      <li>02 - Netuno <span class="preco">28,00</span></li>
+      <li>03 - Vênus <span class="preco">26,00</span></li>
+      <li>04 - Júpter <span class="preco">34,00</span></li>
+      <li>05 - Urano <span class="preco">29,00</span></li>
+      <li>06 - Mercúrio <span class="preco">18,00</span></li>
+      <li>07 - Marte <span class="preco">27,00</span></li>
+      <li>08 - Saturno <span class="preco">29,00</span></li>
+    </ul>
+  </div>
 
-  <footer>
-    Planet Burguer © 2025 - Desenvolvido como amostra ChefConnect
-  </footer>
+  <div class="categoria">
+    <h2>🌟 Combos</h2>
+    <ul>
+      <li>09 - Sol e Lua <span class="preco">86,00</span></li>
+      <li>10 - Constelação <span class="preco">108,00</span></li>
+      <li>11 - Sirius <span class="preco">40,00</span></li>
+    </ul>
+  </div>
+
+  <div class="categoria">
+    <h2>🍟 Batatas</h2>
+    <ul>
+      <li>Batata Simples <span class="preco">22,00</span></li>
+      <li>Batata Especial <span class="preco">28,00</span></li>
+    </ul>
+  </div>
+
+  <div class="categoria">
+    <h2>➕ Adicionais</h2>
+    <ul>
+      <li>Calabresa, Catupiry, Mussarela, Cheddar, Provolone, Bacon <span class="preco">3,00</span></li>
+      <li>Ovo, Cebola Caramelizada <span class="preco">2,00 - 3,00</span></li>
+      <li>Burguer extra <span class="preco">8,00</span></li>
+      <li>Abacaxi <span class="preco">2,00</span></li>
+    </ul>
+  </div>
+
+  <div class="categoria">
+    <h2>🥟 Pastelão</h2>
+    <ul>
+      <li>Frango com Queijo <span class="preco">13,00</span></li>
+      <li>Carne com Queijo <span class="preco">13,00</span></li>
+      <li>Presunto com Queijo <span class="preco">13,00</span></li>
+      <li>Pizza <span class="preco">16,00</span></li>
+      <li>Misto <span class="preco">17,00</span></li>
+      <li>Mistão <span class="preco">20,00</span></li>
+    </ul>
+  </div>
+
+  <div class="categoria">
+    <h2>🧃 Sucos</h2>
+    <ul>
+      <li>Suco 500ml <span class="preco">9,00</span></li>
+      <li>Jarra 1,5L <span class="preco">25,00</span></li>
+    </ul>
+  </div>
+
+  <div class="categoria">
+    <h2>🍨 Sorvetes</h2>
+    <ul>
+      <li>Taça (P) 2 sabores <span class="preco">5,00</span></li>
+      <li>Taça (M) 3 sabores <span class="preco">7,50</span></li>
+      <li>Taça (G) 5 sabores <span class="preco">12,50</span></li>
+      <li>Milk Shake 250ml <span class="preco">12,00</span></li>
+      <li>Milk Shake 350ml <span class="preco">15,00</span></li>
+    </ul>
+  </div>
+
+  <div class="categoria">
+    <h2>🥤 Bebidas</h2>
+    <ul>
+      <li>Refrigerante lata <span class="preco">6,00</span></li>
+      <li>Refrigerante 600ml <span class="preco">8,00</span></li>
+      <li>Refrigerante 1L <span class="preco">11,00</span></li>
+      <li>Refrigerante 2L <span class="preco">14,00</span></li>
+      <li>H2Oh <span class="preco">7,00</span></li>
+      <li>Água mineral <span class="preco">3,00</span></li>
+      <li>Água com gás <span class="preco">4,00</span></li>
+      <li>Água de coco <span class="preco">5,00</span></li>
+      <li>Heineken <span class="preco">11,00</span></li>
+      <li>Corona, Budweiser, Stella Artois <span class="preco">10,00</span></li>
+    </ul>
+  </div>
+
 </body>
 </html>
