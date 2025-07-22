@@ -1,99 +1,59 @@
-
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Planet Burguer - Cardápio Digital</title>
+  <title>Planet Burguer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
   <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
     body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: #1a012c;
+      font-family: 'Fredoka One', cursive;
+      background-color: #1a1a1a;
       color: white;
+      padding: 20px;
     }
-    header {
-      text-align: center;
-      padding: 2rem 1rem;
-      background-image: url('https://cdn.pixabay.com/photo/2020/05/24/10/33/space-5210684_1280.jpg');
-      background-size: cover;
-    }
-    header img {
-      width: 100px;
-      margin-bottom: 1rem;
-    }
-    header h1 {
-      font-size: 2rem;
-      margin: 0;
-      color: #FFD700;
-    }
-    header p {
-      color: #ccc;
-    }
-    .buttons {
+    header { text-align: center; margin-bottom: 20px; }
+    .logo { max-width: 200px; }
+    .menu-inicial {
       display: flex;
       flex-direction: column;
-      gap: 1rem;
-      margin: 2rem auto;
-      width: 90%;
-      max-width: 400px;
+      align-items: center;
+      margin-top: 40px;
+      gap: 15px;
     }
-    .buttons a {
+    .menu-inicial a {
+      background-color: #f1c40f;
+      color: #1a1a1a;
+      padding: 15px 30px;
+      border-radius: 20px;
       text-decoration: none;
-      background: #FFD700;
-      color: #1a012c;
-      padding: 1rem;
-      border-radius: 10px;
-      text-align: center;
+      font-size: 1em;
       font-weight: bold;
-      transition: background 0.3s;
+      transition: 0.3s;
     }
-    .buttons a:hover {
-      background: #ffc400;
-    }
-    section {
-      padding: 2rem 1rem;
-      max-width: 800px;
-      margin: auto;
-    }
-    section h2 {
-      color: #FFD700;
-      margin-top: 2rem;
-      border-bottom: 1px solid #FFD700;
-      padding-bottom: 0.5rem;
-    }
-    .item {
-      margin-bottom: 1.5rem;
-    }
-    .item h3 {
-      margin: 0;
-      color: #fff;
-    }
-    .item p {
-      margin: 0.2rem 0;
-      color: #aaa;
-    }
+    .menu-inicial a:hover { background-color: #ffe066; }
     footer {
       text-align: center;
-      padding: 2rem;
-      font-size: 0.8rem;
-      color: #888;
+      margin-top: 40px;
+      font-size: 0.9em;
+      color: #bbb;
     }
   </style>
 </head>
 <body>
   <header>
-    <img src="https://i.imgur.com/NMZmKXq.png" alt="Logo Planet Burguer">
+    <img src="https://raw.githubusercontent.com/redvc2025/planetburguer2.github.io/main/logo.png" alt="Planet Burguer Logo" class="logo">
     <h1>Planet Burguer</h1>
     <p>Sabores de outro planeta diretamente para o seu lanche!</p>
   </header>
 
-  <div class="buttons">
-    <a href="cardapio.html">Ver Cardápio Completo</a>
-    <a href="https://wa.me/seunumerodowhatsapp" target="_blank">Fazer Pedido no WhatsApp</a>
-    <a href="https://goo.gl/maps/link" target="_blank">Ver Localização</a>
-    <a href="#">Instagram</a>
-  </div>
+  <section class="menu-inicial">
+    <a href="https://redvc2025.github.io/planetburguer2.github.io/" target="_blank">Ver Cardápio Completo</a>
+    <a href="https://wa.me/5594992778281" target="_blank">Fazer Pedido no WhatsApp</a>
+    <a href="https://www.google.com/maps?q=planet+burguer+reden%C3%A7%C3%A3o+pa" target="_blank">Ver Localização</a>
+    <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+  </section>
 
   <footer>
     Planet Burguer © 2025 - Desenvolvido como amostra ChefConnect
